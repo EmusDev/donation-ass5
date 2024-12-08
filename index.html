@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Donation</title>
+</head>
+
+<body>
+    <!-- this my nav & header part -->
+
+    <header class="positive fixed w-full bg-base-100">
+        <div class="">
+            <nav class="container mx-auto">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a><img src="./assets/logo.png" alt="">Donate Bangladesh</a></li>
+
+                            </ul>
+                        </div>
+                        <button id="blog-btn" class="btn btn-ghost text-xl">Blog</button>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a><img src="./assets/logo.png" alt=""><span class="text-3xl font-bold">Donate
+                                        Bangladesh</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="btn"><img src="./assets/coin.png" alt="#"> <span id="total-donate">5000</span>BDT</a>
+                    </div>
+                </div>
+
+
+            </nav>
+            <div>
+                <div class="text-center">
+                    <button id="nav-donation-btn" class="btn btn-outline btn-primary">Donation</button>
+                    <button id="history-btn" class="btn btn-outline btn-primary">History</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+ <!-- this my nav & header part  close-->
+
+ <!-- this is my main section & dotation-place with input section  -->
+
+    <main class="">
+
+        <div class="" id="donate-container">
+            <!-- frist card -->
+            <div class="hero bg-base-200 min-h-screen">
+                <div class="mt-40">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./assets/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h3 class="flex mr-6"><img src="./assets/coin.png" alt=""><span id="donateAreaAmount"
+                                    class="mr-2 ml-2">500</span>Tk</h3>
+                            <h1 class="text-3xl font-bold" id="dotation-place">Donate for Flood at Noakhali, Bangladesh
+                            </h1>
+                            <p class="py-6">
+                                The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                                Your donation will help provide essential supplies and to those affected by this
+                                disaster. Every contribution, big or small, makes difference. Please join us in
+                                supporting the relief efforts and making a positive impact on the lives of those in
+                                need.
+                            </p>
+                            <input id="input-value" type="number" placeholder="Write Donation Amount"
+                                class="input w-full" /> <br> <br>
+                            <button id="donate-btn" class="btn btn-primary w-full">Donate Now</button>
+                        </div>
+                    </div>
+
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./assets/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h3 class="flex mr-6"><img src="./assets/coin.png" alt=""><span id="donateAreaAmountFeni"
+                                    class="mr-2 ml-2">1000</span>Tk</h3>
+                            <h1 class="text-3xl font-bold" id='dotation-place-feni'>Donate for Flood at Feni, Bangladesh
+                            </h1>
+                            <p class="py-6" id="">
+                                The recent floods in Feni have caused significant damage to homes infrastructure.
+                                Your donation will help provide essential supplies and to those affected by this
+                                disaster. Every contribution, big or small, makes difference. Please join us in
+                                supporting the relief efforts and making a positive impact on the lives of those in
+                                need.
+                            </p>
+                            <input id="input-value-feni" type="number" placeholder="Write Donation Amount"
+                                class="input w-full" /> <br> <br>
+                            <button id="donate-btn-feni" class="btn btn-primary w-full">Donate Now</button>
+                        </div>
+                    </div>
+
+                    <!-- third -->
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="./assets/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h3 class="flex mr-6"><img src="./assets/coin.png" alt=""><span id="quota-amount"
+                                    class="mr-2 ml-2">300</span>Tk</h3>
+                            <h1 class="text-3xl font-bold" id="donation-place-quota">Aid for Injured in the Quota
+                                Movement</h1>
+                            <p class="py-6">
+                                The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                                Your donation will help provide essential supplies and to those affected by this
+                                disaster. Every contribution, big or small, makes difference. Please join us in
+                                supporting the relief efforts and making a positive impact on the lives of those in
+                                need.
+                            </p>
+                            <input id="input-quota-amount" type="number" placeholder="Write Donation Amount"
+                                class="input w-full" /> <br> <br>
+                            <button id="donate-btn-quota" class="btn btn-primary w-full">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+     <!-- this is my main section & dotation-place with input section  close-->
+
+    <!-- history section  -->
+    <section class="pt-40">
+        <div id="transaction-sections" class="container mx-auto">
+
+        </div>
+    </section>
+
+    <!-- answer to the question -->
+
+    <section class="">
+        <div class="hidden " id="quation">
+            <div class="container mx-auto">
+                <div class="join join-vertical w-full  mt-40">
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">What will the following code output, and why?
+                        </div>
+                        <div class="collapse-content">
+                            <input id="input-value" type="text" placeholder="Write the ans" class="input w-full" />
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">How can you access the property name of the
+                            object below using both dot notation and bracket notation?</div>
+                        <div class="collapse-content">
+                            <input id="input-value" type="text" placeholder="Write the ans" class="input w-full" />
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">Explain the difference between setTimeout and
+                            setInterval in JavaScript. Provide an example of each.</div>
+                        <div class="collapse-content">
+                            <input id="input-value" type="text" placeholder="Write the ans" class="input w-full" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/utility.js"></script>
+
+</body>
+
+</html>
